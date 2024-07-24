@@ -11,7 +11,7 @@ const FormattedTime = ({ time }) => {
       .toString()
       .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}.${ms
       .toString()
-      .padStart(1, '0')}`;
+      .padStart(3, '0')}`;
   };
 
   return <div className={styles.component}>{formatTime(time)}</div>;
